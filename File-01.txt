@@ -5,6 +5,6 @@ Line-04
 This is from another repository
 Adding after "This is from another repository"
 .. Forgot to add this after line 6... added
-
+Maddy-02 : Added this line.
 Another line
 Last line
