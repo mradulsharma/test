@@ -1,11 +1,7 @@
 package com.madiv.jar;
 
 
-/*
- * Generates commands for batch file to replace files in JAR file.
- */
-        
-public class JarControllerClient {
+public abstract class JarController {
     private String[] fileList = {
             "e:\\User\\Maddy\\P12-Sonata\\GitWorkspace\\base\\sonata\\sonata-pbx\\src\\bravura\\sonata\\common\\employment\\EmploymentV.java",
             "e:\\User\\Maddy\\P12-Sonata\\GitWorkspace\\base\\sonata\\sonata-pbx\\src\\bravura\\sonata\\account\\maintenance\\relationships\\EarningfrequencyDD.java",
@@ -17,23 +13,14 @@ public class JarControllerClient {
     }; 
     
     
-    
-    public static void main(String[] args) {
-        
-        JarControllerClient client = new JarControllerClient();
-        client.doIt();
-        
-        
-        
+    public void printList(){
+        for(String file:fileList){
+            System.out.println(file);
+        }
     }
 
 
-
-    private void doIt() {
-        JarController controller = JarControllerFactory.getController(JarType.PBX);
-        controller.setFileList(fileList);
-        
-        
-        controller.printList();
+    public void setFileList(String[] fileList2) {
+        this.fileList = fileList2;
     }
 }
