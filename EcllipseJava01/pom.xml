@@ -56,6 +56,24 @@
 		</dependency>
 		
 		
+		<!-- Start : aws-java-sdk-sqs -->
+			<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sqs -->
+			<dependency>
+			    <groupId>com.amazonaws</groupId>
+			    <artifactId>aws-java-sdk-sqs</artifactId>
+			    <version>1.11.475</version>
+			</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/com.amazonaws/amazon-sqs-java-messaging-lib -->
+			<dependency>
+			    <groupId>com.amazonaws</groupId>
+			    <artifactId>amazon-sqs-java-messaging-lib</artifactId>
+			    <version>1.0.4</version>
+			</dependency>		
+			
+		<!-- End : aws-java-sdk-sqs -->
+		
+		
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
 		    <groupId>org.apache.commons</groupId>
