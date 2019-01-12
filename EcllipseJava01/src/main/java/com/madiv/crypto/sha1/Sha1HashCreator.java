@@ -1,4 +1,4 @@
-package com.madiv.sha1;
+package com.madiv.crypto.sha1;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
