@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.AbstractApplicationContext;
 
 import com.madiv.spring.bean.MyClassOne;
+import com.madiv.spring.bean.MyClassThree;
 import com.madiv.spring.bean.MyClassTwo;
 
 
@@ -22,17 +23,27 @@ public class SpringClient {
 	
 	
 	private void doIt() {
+		//MyClassOne : Singleton Scope
 		MyClassOne one = context.getBean(MyClassOne.class);
 		System.out.println("one.getValue()="+one.getValue());
 		System.out.println("one"+one);
 		MyClassOne one1 = context.getBean(MyClassOne.class);
-		System.out.println("one1"+one1);
+		System.out.println("one1"+one1+"\n\n");
 		
+		//MyClassTwo : Singleton Scope
 		MyClassTwo two = context.getBean(MyClassTwo.class);
 		System.out.println("two.getValue()="+two.getValue());
 		System.out.println("two"+two);
 		MyClassTwo two2 = context.getBean(MyClassTwo.class);
-		System.out.println("two2"+two2);
+		System.out.println("two2"+two2+"\n\n");
+		
+
+		//MyClassThree : Prototype Scope
+		MyClassThree three = context.getBean(MyClassThree.class);
+		System.out.println("three.getValue()="+three.getValue());
+		System.out.println("three"+three);
+		MyClassThree three3 = context.getBean(MyClassThree.class); // This one is new object becasue of prototype scope.
+		System.out.println("three3"+three3+"\n\n");
 		
 		
 	}
