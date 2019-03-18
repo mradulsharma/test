@@ -3,6 +3,8 @@ package com.madiv.spring;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
+import com.madiv.spring.bean.AnotherCompany;
+import com.madiv.spring.bean.Company;
 import com.madiv.spring.bean.MyClassFour;
 import com.madiv.spring.bean.MyClassOne;
 import com.madiv.spring.bean.MyClassThree;
@@ -52,6 +54,17 @@ public class SpringClient {
 		System.out.println("four"+four);
 		MyClassFour four4 = (MyClassFour)context.getBean("namedBean"); // This one is new object becasue of prototype scope.
 		System.out.println("four4"+four4+"\n\n");
+		
+		
+		//Company : constructor injection.
+		Company company = context.getBean(Company.class);
+		company.showEmployeeInfo();
+		System.out.println("Above is company.showEmployeeInfo()\n\n");
+
+		//CompanyAnother : setter injection.
+		AnotherCompany anotherCompany = context.getBean(AnotherCompany.class);
+		anotherCompany.getEmployee().showEmployeeInfo();
+		
 		
 	}
 	
