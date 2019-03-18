@@ -3,6 +3,7 @@ package com.madiv.spring;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
+import com.madiv.spring.bean.MyClassFour;
 import com.madiv.spring.bean.MyClassOne;
 import com.madiv.spring.bean.MyClassThree;
 import com.madiv.spring.bean.MyClassTwo;
@@ -45,6 +46,12 @@ public class SpringClient {
 		MyClassThree three3 = context.getBean(MyClassThree.class); // This one is new object becasue of prototype scope.
 		System.out.println("three3"+three3+"\n\n");
 		
+		//MyClassFour : namedBean
+		MyClassFour four = (MyClassFour)context.getBean("namedBean");
+		System.out.println("four.getValue()="+four.getValue());
+		System.out.println("four"+four);
+		MyClassFour four4 = (MyClassFour)context.getBean("namedBean"); // This one is new object becasue of prototype scope.
+		System.out.println("four4"+four4+"\n\n");
 		
 	}
 	
