@@ -145,3 +145,54 @@ public class FMClient {
 
 
 
+
+
+
+/*
+Output :
+
+
+
+
+
+{
+	"time_stamp":"20190319210310",
+	"employee_name":"Candidate Name",
+	"employee_salary":"$550,000.00",
+	"employee_skills":[
+		"1. Java",
+		"2. J2EE",
+		"3. C++",
+		"4. HTML"
+	],
+	"employee_addresses":[
+		{
+			"employee_address_type":"email",
+			"employee_address":"mraduls@affirmsoftware.com.au"
+		},
+		{
+			"employee_address_type":"postal",
+			"employee_address":"343 Lt Collins St, Melbourne, VIC 3000"
+		},
+		{
+			"employee_address_type":"web",
+			"employee_address":"www.test.com"
+		}
+	],
+	"employee_keyvalue":[
+		{
+			"K3":"Value 03"
+		},
+		{
+			"K1":"Value 01"
+		},
+		{
+			"K2":"Value 02"
+		}
+	]
+	
+	
+}
+
+
+ */
