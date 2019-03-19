@@ -23,6 +23,15 @@
 		</dependency>
 
 
+<!-- Start : https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+		<dependency>
+		    <groupId>org.freemarker</groupId>
+		    <artifactId>freemarker</artifactId>
+		    <version>2.3.20</version>
+		</dependency>
+<!-- End : https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+
+
 <!-- Start : JSon required dependencies -->
 		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
