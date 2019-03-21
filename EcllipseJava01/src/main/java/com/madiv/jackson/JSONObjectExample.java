@@ -31,7 +31,7 @@ public class JSONObjectExample {
 		System.out.println("JSON Constructed as : " + json);
 	}
 
-	private JSONObject createObject() {
+	public JSONObject createObject() {
 		Map<String, String> keyValuemapCompanyInfoAndLeaders = getCompanyInfoAndLeaders();
 		List<String> teamMembers = getTeamMembers();
 		
