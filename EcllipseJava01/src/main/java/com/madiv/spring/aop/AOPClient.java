@@ -18,7 +18,7 @@ import com.madiv.spring.aop.bean.TargetClass;
  * 	Advice : What to do.
  * 	Pointcuts : Where on joinpoints to call advice, e.g. @Before, @After, @Around, @AfterReturning, @AfterThrowing
  * 
- * 	Aspect : Advice + pointcuts
+ * 	Aspect : Advice + pointcuts = collection of advices. Which means, class having bunch of advice methods in it is called Aspect. 
  * 
  * End : Terminologies
  * 
