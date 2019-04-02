@@ -49,6 +49,8 @@ public class ObserverClient {
 		//Creating VO
 		ObserverVO observerVO = new ObserverVO("Test Date for MyObservers");
 		log.info("Notifying all observers.");
+		log.info("Registered observers:");
+		MySubject.listObservers();
 		MySubject.notifyAllObservers(observerVO);
 		log.info("Notified.");
 		
