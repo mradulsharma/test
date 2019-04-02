@@ -19,6 +19,9 @@ public class ObserverTwo implements MyObserver {
 		log.info("===========================================");
 		log.info("Got notified : " + (this.getClass().getName()));
 		log.info("vo : " + vo);
+		log.info("Dividing by zero");
+		int i = (689 - 47) / (8-8);
+		
 	}
 	
 	@PostConstruct
