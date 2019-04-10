@@ -8,6 +8,16 @@ public class StringBuilderClient {
     	strBuilder.ensureCapacity(128);
     	System.out.println("Initial Capacity ["+strBuilder.capacity()+"]");
 
+    	//Appending null and see what is strBuilder lenght
+    	String str = null;
+    	strBuilder.append(str);
+    	System.out.println("String ["+strBuilder.toString()+"], lenght ["+strBuilder.length()+"], capacity ["+strBuilder.capacity()+"]");
+    	strBuilder.delete(0, strBuilder.length());
+    	str = "";
+    	strBuilder.append(str);
+    	System.out.println("String ["+strBuilder.toString()+"], lenght ["+strBuilder.length()+"], capacity ["+strBuilder.capacity()+"]");
+    	strBuilder.delete(0, strBuilder.length());
+    	
     	//Appending some text in strBuilder
     	strBuilder.append("This is test");
     	System.out.println("String ["+strBuilder.toString()+"], lenght ["+strBuilder.length()+"], capacity ["+strBuilder.capacity()+"]");
