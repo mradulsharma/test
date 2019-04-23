@@ -1,4 +1,4 @@
-package com.madiv;
+package com.madiv.brv;
 
 import java.util.ArrayList;
 import java.util.List;

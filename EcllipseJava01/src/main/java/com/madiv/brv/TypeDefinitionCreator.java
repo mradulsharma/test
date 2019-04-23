@@ -1,4 +1,4 @@
-package com.madiv;
+package com.madiv.brv;
 
 import static com.madiv.generic.util.StringUtil.isEmpty;
 

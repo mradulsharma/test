@@ -1,4 +1,4 @@
-package com.madiv;
+package com.madiv.brv;
 
 public class DataModelCreator {
 
