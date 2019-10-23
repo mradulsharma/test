@@ -1,0 +1,70 @@
+{
+	"url":"http://192.168.5.27/HR3RestApi/api/v1-0",
+	"cmkey":"fe36703e-8294-419b-8a38-9a724e0a37c0",
+	"callingSequence":[
+		{
+			"sequenceNo":"1",
+			"apiPath":"/Company",
+			"payloadFile":"null",
+			"method":"GET",
+			"params":[],
+			"grepArray":["$..[?(@.Company_code == ${hr3_company_code})].Company_Id"]
+		},
+		{
+			"sequenceNo":"2",
+			"apiPath":"/employee/GetNextEmpno",
+			"payloadFile":"null",
+			"method":"GET",
+			"params":[
+				{
+					"name":"companyId",
+					"value":"${companyId}"
+				}
+			],
+			"grepArray":["${responseBody}"]
+		},
+		{
+			"sequenceNo":"3",
+			"apiPath":"/employee/onboard",
+			"payloadFile":"createEmployee.json",
+			"method":"POST",
+			"params":[],
+			"grepArray":["$.id"]
+		},
+		{
+			"sequenceNo":"4",
+			"apiPath":"/employee/${empid}/banking",
+			"payloadFile":"employeeBankDetail.json",
+			"method":"POST",
+			"params":[],
+			"grepArray":[]
+		},
+		{
+			"sequenceNo":"5",
+			"apiPath":"/employee/${empid}/personalContacts",
+			"payloadFile":"employeeEmergencyContactDetails.json",
+			"method":"POST",
+			"params":[],
+			"grepArray":[]
+		},
+		{
+			"sequenceNo":"6",
+			"apiPath":"/employee/${empid}/personalContacts",
+			"payloadFile":"null",
+			"method":"GET",
+			"params":[],
+			"grepArray":["$.[0].Contact_Id"]
+		},
+		{
+			"sequenceNo":"7",
+			"apiPath":"/contact/${employee_contact_id}/phones",
+			"payloadFile":"employeeEmergencyContactMobileNo.json",
+			"method":"POST",
+			"params":[],
+			"grepArray":[]
+		}		
+				
+				
+				
+	]
+}

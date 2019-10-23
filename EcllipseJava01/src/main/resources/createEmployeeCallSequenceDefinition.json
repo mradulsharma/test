@@ -1,0 +1,19 @@
+{
+	"url":"http://192.168.5.27/HR3RestApi/api/v1-0/",
+	"cmkey":"9d2334f5-601b-4340-8d43-a0dfe782dab9",
+	"callingSequence":[
+		{
+			"sequenceNo":"1",
+			"apiPath":"/superfunds/companycode/BBE",
+			"payloadFile":"employeeBankDetailPayloadSeq02.json",
+			"method":"GET",
+			"params": [
+				{
+			        "name":"pageSize",
+			        "value":"1000"
+			    }
+			],
+			"grepArray":["$.[*].FundDesc"]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "company_code" : "BBE",
+  "empno": "000041",
+  "surname": "Sharma",
+  "firstname": "MaddyOct10b",
+  "sex": "M",
+  "empcond_header_desc":"Bee-Keepers (NSW)",
+  "departments" : "NSWSA",
+  "title": "Mr",
+  "hireddate": "2019-12-01T00:00:00",
+  "taxfileno": "111111111",
+  "pay_points": "Head Office",
+  "employment_status": "Full Time",
+  "pay_periods_desc": "Weekly",
+  "tax_header": "1",
+  "pay_item_code": "P01",
+  "super_fund": "ASGARD",
+  "super_fund_member_no": "123456"
+}

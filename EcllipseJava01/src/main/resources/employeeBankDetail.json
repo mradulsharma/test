@@ -1,0 +1,9 @@
+{
+	"Employee_Details_Id": "${empid}",
+	"Bankstatebranch_Id": "${hr3_bank_branch_id}",
+	"Acctno": "${hr3_bank_account}",
+	"Acctname": "${candidate_first_name} ${candidate_last_name}",
+	"Balanceind": "F",
+	"Dolperc": "F",
+	"Lodgeref": "Salaries"
+}

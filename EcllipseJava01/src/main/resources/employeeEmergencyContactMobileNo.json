@@ -1,0 +1,5 @@
+{
+  "Phone_Type_Id": "${hr3_emergency_contact_mob_type_id}",
+  "Preferred":1,
+  "Phone_Number": "${hr3_emergency_contact_mob_no}"
+}

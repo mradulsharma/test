@@ -1,0 +1,7 @@
+{
+  "Contact_Type_Id": "${hr3_emergency_contact_type_id}",
+  "Title_Id": "${hr3_emergency_title_id}",
+  "Surname": "${hr3_emergency_contact_surname}",
+  "Given_Name": "${hr3_emergency_contact_name}",
+  "Email": "${hr3_emergency_contact_email}"
+}

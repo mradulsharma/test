@@ -1,0 +1,27 @@
+{
+  "company_code" : "${hr3_company_code}",
+  "empno": "${empno}",
+  "surname": "${candidate_last_name}",
+  "firstname": "${candidate_first_name}",
+  "sex": "${hr3_candiate_gender}",
+  "empcond_header_desc":"${hr3_emp_condition}",
+  "departments" : "${hr3_department}",
+  "title": "${hr3_cndt_title}",
+  "hireddate": "${start_date}",
+  "taxfileno": "${hr3_candiate_tfn_no}",
+  "pay_points": "${hr3_pay_point}",
+  "employment_status": "${hr3_employment_status}",
+  "pay_periods_desc": "${hr3_pay_periods}",
+  "tax_header": "${hr3_tax_header}",
+  "pay_item_code": "${hr3_pay_item}",
+  "super_fund": "${hr3_super_fund_api}",
+  "super_fund_member_no": "${hr3_super_fund_member_no}",
+  "Email": "${candidate_email}",
+  "phone_no_mob":"${candidate_mobile_no}",
+  "address_line_1": "${hr3_address_1}",
+  "address_line_2": "${hr3_address_2}",
+  "suburb": "${hr3_address_suburb}",
+  "postcode": "${hr3_address_postcode}",
+  "birthdate":"${hr3_candidate_dob}"
+  
+}
