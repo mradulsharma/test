@@ -28,11 +28,11 @@ import freemarker.template.TemplateException;
  * 
  * 
  */
-public class FMClient {
+public class FMFileTemplateClient {
 	private final String outputFileName = "C:/Users/Maddy/Downloads/FreemarkerOutput.txt";
 	
 	public static void main(String[] args) {
-		FMClient client = new FMClient();
+		FMFileTemplateClient client = new FMFileTemplateClient();
 		client.doIt();
 	}
 
@@ -44,7 +44,10 @@ public class FMClient {
 		try {
 			// Load template from source folder
 			Template template = cfg.getTemplate("sample.ftl");
-
+			
+			   
+			   
+			   
 			// Build the data-model
 			Map<String, Object> data = new HashMap<String, Object>();
 			data.put("candidateName", "Candidate Name");
