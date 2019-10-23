@@ -12,7 +12,7 @@ import freemarker.template.TemplateException;
 
 public class FMStringTemplateClient {
 	public static void main(String[] args) throws TemplateException, IOException {
-		// This is example how a single line string template to use
+		// This is example how a single line string template to use, this will also check if else condition checking if data is available in map or not.
 		
 		
 		Configuration cfg = new Configuration();
