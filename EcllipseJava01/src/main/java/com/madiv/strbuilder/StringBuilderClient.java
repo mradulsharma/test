@@ -7,6 +7,7 @@ public class StringBuilderClient {
     	//Set initial capacity
     	strBuilder.ensureCapacity(128);
     	System.out.println("Initial Capacity ["+strBuilder.capacity()+"]");
+    	System.out.println("Lenght ["+strBuilder.length()+"]\n\n");
 
     	//Appending null and see what is strBuilder lenght
     	String str = null;
