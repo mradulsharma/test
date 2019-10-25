@@ -18,14 +18,14 @@ public class FMStringTemplateClient {
 		Configuration cfg = new Configuration();
 
 		StringTemplateLoader stringLoader = new StringTemplateLoader();
-		stringLoader.putTemplate("urlTempalte", "/paypoints/companycode/<#if companycode1??>${companycode1}<#elseif companycode2??>${companycode2}<#else>${default}</#if>");
+		stringLoader.putTemplate("urlTempalte", "/paypoints/companycode/<#if companycode1?? && companycode2??>${companycode1} + ${companycode2}<#elseif companycode2??>${companycode2}<#else>${default}</#if>");
 		cfg.setTemplateLoader(stringLoader);
 		Template template = cfg.getTemplate("urlTempalte");		
 		
 		
 		Map<String, Object> data = new HashMap<String, Object>();
-		data.put("companycode1", "BBE");
-		data.put("companycode2", "CAT");
+//		data.put("companycode1", "BBE");
+//		data.put("companycode2", "CAT");
 		data.put("default", "testing");
 		data.put("pageSizeValue", "1000");
 		
