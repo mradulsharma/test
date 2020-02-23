@@ -11,10 +11,48 @@ import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
 public class FMStringTemplateClient {
+	
 	public static void main(String[] args) throws TemplateException, IOException {
+		
+		FMStringTemplateClient templateClient = new FMStringTemplateClient();
+		
+		templateClient.doIt01();
+		templateClient.doIt02();
+		
+		
+		
+		
+		
+
+	}
+
+	private void doIt02() throws IOException, TemplateException {
+		// Trying trim of map value
+		Configuration cfg = new Configuration();
+
+		StringTemplateLoader stringLoader = new StringTemplateLoader();
+		stringLoader.putTemplate("urlTempalte", "/paypoints/companycode/<#if companycode1??>${companycode1}</#if><#if companycode2?has_content>/${companycode2}</#if>");
+		cfg.setTemplateLoader(stringLoader);
+		Template template = cfg.getTemplate("urlTempalte");		
+		
+		
+		Map<String, Object> data = new HashMap<String, Object>();
+		data.put("companycode1", " BBE   ");
+ 		data.put("companycode2", " ");
+		
+		
+		StringWriter out = new StringWriter();
+		template.process(data, out);
+		out.flush();
+		
+		System.out.println("After replacing text : [" + out.getBuffer().toString() + "]");
+		System.out.println("Datamap :" + data);
+		
+		
+	}
+
+	private void doIt01() throws IOException, TemplateException {
 		// This is example how a single line string template to use, this will also check if else condition checking if data is available in map or not.
-		
-		
 		Configuration cfg = new Configuration();
 
 		StringTemplateLoader stringLoader = new StringTemplateLoader();
@@ -24,8 +62,8 @@ public class FMStringTemplateClient {
 		
 		
 		Map<String, Object> data = new HashMap<String, Object>();
-//		data.put("companycode1", "BBE");
-//		data.put("companycode2", "CAT");
+		data.put("companycode1", "BBE");
+		data.put("companycode2", "CAT");
 		data.put("default", "testing");
 		data.put("pageSizeValue", "1000");
 		
@@ -37,7 +75,7 @@ public class FMStringTemplateClient {
 		System.out.println("After replacing text :" + out.getBuffer().toString());
 		System.out.println("Datamap :" + data);
 		
-		
-
 	}
+	
+	
 }
