@@ -25,6 +25,7 @@ public class Index {
 		System.out.println("20. [Apr 08, 2020] : Affirm : Read CSV and convert JSON for API, main class CSV2JSonConverter.java : com.madiv.jsonapi");
 		System.out.println("21. [Apr 08, 2020] : USing OpenCSV to read CSV file : com.madiv.opencsv.OpenCSVSimpleClient.java");
 		System.out.println("22. [May 02, 2020] : Using object mapper to convert objects to json or map : com.madiv.objectmapper");
+		System.out.println("23. [Feb 16, 2021] : Beatify JSON using gson api : com.madiv.gson");
 		
 	}
 }
