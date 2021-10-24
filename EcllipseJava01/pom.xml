@@ -21,6 +21,15 @@
 			<artifactId>commons-io</artifactId>
 			<version>1.3.2</version>
 		</dependency>
+		
+<!-- Start : https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-cognitoidp -->
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk-cognitoidp</artifactId>
+		    <version>1.11.974</version>
+		</dependency>
+<!-- End : https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-cognitoidp -->
+		
 
 <!-- Start : Apache Common Math -->
 		<dependency>
