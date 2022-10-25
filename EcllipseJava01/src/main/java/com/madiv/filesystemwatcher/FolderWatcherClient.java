@@ -5,11 +5,19 @@ import java.io.File;
 import org.apache.commons.io.monitor.FileAlterationListener;
 import org.apache.commons.io.monitor.FileAlterationMonitor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
+import org.apache.commons.lang3.StringUtils;
 
 public class FolderWatcherClient {
 	
 	public static void main(String[] args) throws Exception {
 		FolderWatcherClient client = new FolderWatcherClient();
+		
+		if(StringUtils.isBlank(args[0])) {
+			System.out.println("Unable to find folder path args[0] = ["+args[0]+"] ");
+			throw new Exception("Unable to find folder path args[0] = ["+args[0]+"] ");
+		}
+		
+		
 		client.watchFolder(args[0]);
 		System.out.println("Started watching folder "+args[0]+" !!");
 		System.out.println("Press CTRL+C to stop");
